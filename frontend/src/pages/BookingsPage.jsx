@@ -229,7 +229,7 @@ export default function BookingsPage() {
   const [statusFilter, setStatusFilter] = useState("ALL");
   const [sendingQrId, setSendingQrId] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
-  const [showFormModal, setShowFormModal] = useState(false);
+  const [showFormModal, setShowFormModal] = useState(true);
   const [submittingBooking, setSubmittingBooking] = useState(true);
   const [loadingBookings, setLoadingBookings] = useState(true);
   const [page, setPage] = useState(1);
