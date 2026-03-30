@@ -35,7 +35,7 @@ public class BookingController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("isAuthenticated()")
     public BookingResponse create(@RequestBody BookingRequest request) {
         return bookingService.create(request, currentUserService.requireCurrentUser());
