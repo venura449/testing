@@ -91,7 +91,7 @@ const typeIcon = {
 // Inline capacity bar chart
 function CapacityBar({ capacity }) {
   if (!capacity) return null;
-  const max = 64;
+  const max = 128;
   const pct = Math.min(100, Math.round((capacity / max) * 100));
   const color =
     pct < 40 ? "bg-emerald-400" : pct < 75 ? "bg-amber-400" : "bg-red-400";
