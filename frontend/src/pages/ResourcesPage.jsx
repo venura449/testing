@@ -294,7 +294,7 @@ export default function ResourcesPage() {
   const [typeFilter, setTypeFilter] = useState("ALL");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(0);
-  const [showFormModal, setShowFormModal] = useState(false);
+  const [showFormModal, setShowFormModal] = useState(true);
 
   const canManageFacilities = hasAdminRole(user);
   const pageSize = 5;
