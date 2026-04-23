@@ -239,7 +239,7 @@ export default function BookingsPage() {
     String(user?.role ?? "")
       .toUpperCase()
       .replace(/^ROLE_/, "") === "ADMIN";
-  const pageSize = 5;
+  const pageSize = 25;
   const currentLocalMin = toDateTimeLocalValue(new Date(now));
   const { startError, endError } = validateBookingTimes(form, new Date(now));
   const conflict = findApprovedBookingConflict(form, bookings);
