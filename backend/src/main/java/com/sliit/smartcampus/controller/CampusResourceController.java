@@ -30,7 +30,7 @@ public class CampusResourceController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("hasRole('ADMIN')")
     public ResourceResponse create(@RequestBody ResourceRequest request) {
         return campusResourceService.create(request);
