@@ -186,7 +186,7 @@ function DonutChart({ segments }) {
 export default function AdminAnalyticsPage() {
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     apiGet("/admin/analytics")
