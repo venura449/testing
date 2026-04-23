@@ -340,7 +340,7 @@ export default function MaintenancePage() {
   const [priorityFilter, setPriorityFilter] = useState("ALL");
   const [showCreateModal, setShowCreateModal] = useState(true);
   const [selectedTicketId, setSelectedTicketId] = useState(null);
-  const [page, setPage] = useState(20);
+  const [page, setPage] = useState(0);
   const pageSize = 5;
 
   const role = normalizedRole(user);
