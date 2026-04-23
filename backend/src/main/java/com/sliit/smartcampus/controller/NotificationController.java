@@ -60,7 +60,7 @@ public class NotificationController {
     }
 
     @DeleteMapping("/clear-all")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("isAuthenticated()")
     public void clearAll() {
         var user = currentUserService.requireCurrentUser();
