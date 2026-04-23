@@ -36,7 +36,7 @@ public class MaintenanceController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("isAuthenticated()")
     public TicketResponse create(@RequestBody TicketRequest request) {
         return maintenanceService.create(request, currentUserService.requireCurrentUser());
