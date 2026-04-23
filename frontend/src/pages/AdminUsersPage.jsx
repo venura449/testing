@@ -7,7 +7,7 @@ const roleOptions = ["ADMIN", "USER", "TECHNICIAN"];
 export default function AdminUsersPage() {
   const { user } = useAuth();
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [updatingId, setUpdatingId] = useState(null);
   const [roleDraft, setRoleDraft] = useState({});
