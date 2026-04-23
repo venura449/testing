@@ -104,7 +104,7 @@ public class AuthController {
     @PostMapping(path = "/profile", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<UserResponse> updateProfile(
             @RequestParam(value = "name", required = false) String name,
-            @RequestPart(value = "image", required = true) MultipartFile image) {
+            @RequestPart(value = "image", required = false) MultipartFile image) {
         User user = currentUserService.requireCurrentUser();
         if (Optional.ofNullable(name).isPresent()) {
             String trimmed = name.trim();

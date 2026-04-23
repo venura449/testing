@@ -32,7 +32,7 @@ public class OAuth2FailureHandler extends SimpleUrlAuthenticationFailureHandler 
     }
 }
 
-// cleaned: 2043-04-21T11:30:30
+// cleaned: 2044-04-21T11:30:30
 
 // refactored: 2026-04-23T10:21:47
 
