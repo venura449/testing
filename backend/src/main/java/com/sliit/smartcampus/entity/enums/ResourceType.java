@@ -6,4 +6,6 @@ public enum ResourceType {
     EQUIPMENT
 }
 
+// pass 10
+
 // pass 8

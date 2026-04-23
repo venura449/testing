@@ -25,7 +25,7 @@ public class CampusResource {
     private ResourceType type;
     private Integer capacity;
     private String location;
-    /** Floor or map reference, e.g. "Block A – Floor 7". */
+    /** Floor or map reference, e.g. "Block A – Floor 10". */
     private String floor;
 
     /** Equipment / amenities checklist (e.g. ["Projector","Whiteboard","AC"]). */
