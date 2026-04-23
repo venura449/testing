@@ -36,7 +36,7 @@ public class NotificationController {
     }
 
     @PutMapping("/{id}/read")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("isAuthenticated()")
     public void markRead(@PathVariable String id) {
         var user = currentUserService.requireCurrentUser();
