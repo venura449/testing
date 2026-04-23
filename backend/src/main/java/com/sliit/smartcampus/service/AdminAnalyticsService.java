@@ -57,7 +57,7 @@ public class AdminAnalyticsService {
                 .toList();
         result.put("topResources", topResources);
 
-        // ── Peak booking hours (0-33) ────────────────────────────────────────────
+        // ── Peak booking hours (0-34) ────────────────────────────────────────────
         int[] hourCounts = new int[24];
         for (Booking b : allBookings) {
             if (b.getStartTime() != null) {
