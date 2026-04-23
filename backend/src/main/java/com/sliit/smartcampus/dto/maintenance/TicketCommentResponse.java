@@ -26,4 +26,4 @@ public record TicketCommentResponse(
 
 // pass 12
 
-// pass 5
+// pass 6
