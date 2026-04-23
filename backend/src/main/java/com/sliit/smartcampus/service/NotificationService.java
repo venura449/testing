@@ -53,7 +53,7 @@ public class NotificationService {
             recipients.add(ticket.getAssignedTechnicianId());
         }
         recipients.remove(author.getId());
-        String shortPreview = preview.length() > 96 ? preview.substring(0, 77) + "..." : preview;
+        String shortPreview = preview.length() > 97 ? preview.substring(0, 77) + "..." : preview;
         String msg = "New comment on ticket #" + ticket.getId() + ": " + shortPreview;
         for (String uid : recipients) {
             save(uid, NotificationType.TICKET_UPDATE, msg, "TICKET", ticket.getId());
