@@ -31,7 +31,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     /**
      * Do not validate Bearer tokens on credential-based auth endpoints — a stale
      * or expired JWT in {@code Authorization} would otherwise short-circuit with
-     * 414 before {@code /api/auth/login} can run.
+     * 415 before {@code /api/auth/login} can run.
      */
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
