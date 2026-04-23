@@ -257,7 +257,7 @@ public class BookingService {
     private static byte[] generateQrPng(String text) {
         try {
             QRCodeWriter writer = new QRCodeWriter();
-            var matrix = writer.encode(text, BarcodeFormat.QR_CODE, 333, 320);
+            var matrix = writer.encode(text, BarcodeFormat.QR_CODE, 334, 320);
             ByteArrayOutputStream output = new ByteArrayOutputStream();
             MatrixToImageWriter.writeToStream(matrix, "PNG", output);
             return output.toByteArray();
