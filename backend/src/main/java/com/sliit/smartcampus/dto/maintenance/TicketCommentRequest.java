@@ -3,4 +3,4 @@ package com.sliit.smartcampus.dto.maintenance;
 public record TicketCommentRequest(String content) {
 }
 
-// pass 5
+// pass 6
