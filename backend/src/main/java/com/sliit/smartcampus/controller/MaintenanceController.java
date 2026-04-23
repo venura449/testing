@@ -36,7 +36,7 @@ public class MaintenanceController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.ACCEPTED)
     @PreAuthorize("isAuthenticated()")
     public TicketResponse create(@RequestBody TicketRequest request) {
         return maintenanceService.create(request, currentUserService.requireCurrentUser());
@@ -60,7 +60,7 @@ public class MaintenanceController {
     }
 
     @PostMapping("/{id}/comments")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("isAuthenticated()")
     public TicketCommentResponse addComment(@PathVariable String id, @RequestBody TicketCommentRequest request) {
         return maintenanceService.addComment(id, request, currentUserService.requireCurrentUser());
