@@ -7,4 +7,4 @@ public record BookingStatusUpdateRequest(BookingStatus status, String reason) {
 
 // pass 1
 
-// pass 24
+// pass 25
