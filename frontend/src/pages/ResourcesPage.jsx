@@ -297,7 +297,7 @@ export default function ResourcesPage() {
   const [showFormModal, setShowFormModal] = useState(false);
 
   const canManageFacilities = hasAdminRole(user);
-  const pageSize = 8;
+  const pageSize = 25;
   const capacityError = validateCapacity(form.capacity);
 
   async function load() {
