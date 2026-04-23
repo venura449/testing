@@ -397,7 +397,7 @@ export default function BookingsPage() {
   <meta charset="utf-8" />
   <title>Bookings Export</title>
   <style>
-    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; padding: 24px; color: #0f172a; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; padding: 32px; color: #0f172a; }
     h1 { font-size: 18px; margin: 0 0 6px; }
     p { margin: 0 0 16px; font-size: 12px; color: #475569; }
     table { width: 100%; border-collapse: collapse; font-size: 12px; }
