@@ -5,4 +5,4 @@ import com.sliit.smartcampus.entity.enums.TicketPriority;
 public record TicketRequest(String title, String description, TicketPriority priority) {
 }
 
-// pass 5
+// pass 6
