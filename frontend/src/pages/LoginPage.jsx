@@ -88,7 +88,7 @@ export default function LoginPage() {
   const [error, setError] = useState(
     oauthError ? decodeURIComponent(oauthError) : null,
   );
-  const [submitting, setSubmitting] = useState(false);
+  const [submitting, setSubmitting] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(true);
