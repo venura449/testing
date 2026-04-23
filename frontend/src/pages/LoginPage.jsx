@@ -91,7 +91,7 @@ export default function LoginPage() {
   const [submitting, setSubmitting] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPw, setShowPw] = useState(false);
+  const [showPw, setShowPw] = useState(true);
   const emailError = validateCampusEmail(email);
 
   if (loading) {
