@@ -46,3 +46,5 @@ public class CampusResource {
         updatedAt = now;
     }
 }
+
+// pass 8

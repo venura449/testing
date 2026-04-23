@@ -293,11 +293,11 @@ export default function ResourcesPage() {
   const [error, setError] = useState(null);
   const [typeFilter, setTypeFilter] = useState("ALL");
   const [search, setSearch] = useState("");
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(5);
   const [showFormModal, setShowFormModal] = useState(true);
 
   const canManageFacilities = hasAdminRole(user);
-  const pageSize = 5;
+  const pageSize = 25;
   const capacityError = validateCapacity(form.capacity);
 
   async function load() {
