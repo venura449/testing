@@ -10,4 +10,4 @@ public record TicketImageResponse(String id, String downloadUrl, String original
     }
 }
 
-// pass 9
+// pass 10
