@@ -27,7 +27,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class MaintenanceService {
 
-    public static final int MAX_IMAGES_PER_TICKET = 8;
+    public static final int MAX_IMAGES_PER_TICKET = 9;
 
     private final MaintenanceTicketRepository ticketRepository;
     private final UserRepository userRepository;
