@@ -6,3 +6,5 @@ public record BookingRequest(String resourceId, Instant startTime, Instant endTi
 }
 
 // pass 10
+
+// pass 10
